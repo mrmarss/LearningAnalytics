@@ -1,0 +1,69 @@
+body{
+  background: url("/swirl_pattern.png");
+}
+
+h1#welcome{
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  position: relative;
+}
+
+.jumbotron{
+  background: rgb(137, 52, 176);
+  box-shadow: 3px 3px 3px black;
+}
+
+.jumbotron h1, .jumbotron {
+    position: relative;
+
+
+    /* Fade upward */
+    -webkit-animation-name: page_intro; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 1; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation-name: page_intro;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes page_intro {
+    0%   {top:300px;opacity: 0;}
+    100% {top:0px;opacity: 1;}
+}
+/* Standard syntax */
+@keyframes page_intro {
+  0%   {top:300px;opacity: 0;}
+  100% {top:0px;opacity: 1;}
+}
+/*
+h1{
+  border: red solid 1px;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+}
+
+h1:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: 3px 3px 3px black;
+}
+
+h1:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}*/
