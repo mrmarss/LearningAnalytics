@@ -6,11 +6,16 @@ h1#welcome{
   color: white;
   text-shadow: 3px 3px 3px black;
   position: relative;
+  margin-top:50px;
 }
 
 .jumbotron{
-  background: rgb(137, 52, 176);
+  background: linear-gradient(rgb(137, 52, 176), rgb(206, 182, 226));
   box-shadow: 3px 3px 3px black;
+}
+
+.row{
+  box-shadow: 0px 3px 10px black;
 }
 
 .jumbotron h1, .jumbotron {
@@ -38,22 +43,40 @@ h1#welcome{
   0%   {top:300px;opacity: 0;}
   100% {top:0px;opacity: 1;}
 }
-/*
-h1{
-  border: red solid 1px;
+
+/*Repeating Row Pattern*/
+
+/*clear row*/
+div.row:nth-of-type(odd) {
+   background-color: transparent;
+ }
+
+/* gray row*/
+div.row:nth-of-type(even) {
+   background: #c2c2c2;
+ }
+
+/* white row
+ div.row:nth-of-type(3n) {
+    background: rgb(206, 182, 226);
+  }*/
+
+/***************************/
+
+/* navbar li hover animation */
+#navbar ul li a{
   position: relative;
-  color: #FFF;
   text-decoration: none;
 }
 
-h1:before {
+#navbar ul li a:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 5px;
+  height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #FFF;
+  background-color: rgb(137, 52, 176);
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -62,8 +85,8 @@ h1:before {
   box-shadow: 3px 3px 3px black;
 }
 
-h1:before {
+#navbar ul li a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-}*/
+}
