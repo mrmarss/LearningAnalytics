@@ -1,3 +1,5 @@
+// This app was run as a test on the AWS server
+
 var express = require('express');
 var app = express();
 
