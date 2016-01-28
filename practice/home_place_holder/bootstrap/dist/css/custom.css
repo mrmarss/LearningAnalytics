@@ -1,9 +1,20 @@
+/*@background_c: #c2c2c2;*/
+
 html{
-  background: #c2c2c2;
+  background: #c2c2c2; /*@background_c*/
 }
 
 body{
   background: url("/dark_embroidery.png");
+}
+
+footer{
+  height: 50px;
+}
+
+footer p{
+  padding-top: 15px;
+  text-align: center;
 }
 
 h1#welcome{
@@ -57,7 +68,7 @@ div.row:nth-of-type(odd) {
 
 /* gray row*/
 div.row:nth-of-type(even) {
-   background: #c2c2c2;
+   background:#c2c2c2; /*@background_c;*/
  }
 
 /* white row
