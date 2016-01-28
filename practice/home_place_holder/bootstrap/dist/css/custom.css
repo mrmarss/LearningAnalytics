@@ -1,5 +1,9 @@
+html{
+  background: #c2c2c2;
+}
+
 body{
-  background: url("/swirl_pattern.png");
+  background: url("/dark_embroidery.png");
 }
 
 h1#welcome{
@@ -35,12 +39,12 @@ h1#welcome{
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes page_intro {
-    0%   {top:300px;opacity: 0;}
+    0%   {top:50px;opacity: 0;}
     100% {top:0px;opacity: 1;}
 }
 /* Standard syntax */
 @keyframes page_intro {
-  0%   {top:300px;opacity: 0;}
+  0%   {top:50px;opacity: 0;}
   100% {top:0px;opacity: 1;}
 }
 
